@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Upload Form</title>
+</head>
+<body>
+    <form action="{% url "formurl" %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <input type="file" title="Upload excel file" name="file" required="required">
+    </div>
+
+    <button type="submit" value="Upload" name="file" >Upload</button>
+    </form>
+
+</body>
+</html>
